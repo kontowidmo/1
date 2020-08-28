@@ -1,0 +1,94 @@
+<div style="width:100%; padding-top: 10px;">
+    <table>
+        <tbody>
+            <tr>
+                <th style="text-align: center">
+                    <span>Okresowość ataku (minuty)</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Amplituda okresowości (sec)</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Odstęp między atakami (msec)</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Amplituda odstępu (msec)</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Nie wysyłaj dalej niż (pola)</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Szablon</span>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="ad" style="width:100%; text-align: center;" onchange="updateValue('ad')">
+                </td>
+                <td>
+                    <input type="number" id="ds" style="width:100%; text-align: center;" onchange="updateValue('ds')">
+                </td>
+                <td>
+                    <input type="number" id="ac" style="width:100%; text-align: center;" onchange="updateValue('ac')">
+                </td>
+                <td>
+                    <input type="number" id="cs" style="width:100%; text-align: center;" onchange="updateValue('cs')">
+                </td>
+                <td>
+                    <input type="number" id="nd" style="width:100%; text-align: center;" onchange="updateValue('nd')">
+                </td>
+                <td>
+                    <select id="sb" style="width:100%; text-align: center;" onchange="updateValue('sb')">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                    </select>
+                </td>  
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%">
+        <tbody>
+            <tr>
+                <th style="text-align: center">
+                    <span>Suma wysłanych ataków</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Ostatni atak</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Następna seria</span>
+                </th>
+                <th style="text-align: center">
+                    <span>Wiosek w zasięgu</span>
+                </th>
+                <th style="text-align: center">
+                    
+                </th>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <span id='sa'>0</span>
+                </td>
+                <td style="text-align: center">
+                    <span id='la'>0</span>
+                </td>
+                <td style="text-align: center">
+                    <span id='ns'>0</span>
+                </td>
+                <td style="text-align: center">
+                    <span id='zw'>0</span>
+                </td>
+                <td style="text-align: center">
+                    <button type="button" class="btn" onclick="resetBot()">Reset</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center; width: 100%">
+        <button type="button" class="btn" onclick="startBot()">Start</button>
+        <button type="button" class="btn" onclick="stopBot()">Stop</button>
+    </div>
+    <hr>
+    <span>Created By <a href="https://github.com/Klaku">Klaku</a></span><br>
+    <span><a href="mailto:rafass1000@gmail.com?subject=%5BPlemiona%5D%20%5BFarm%20Bot%5D&amp;body=Pomys%C5%82%3A%20Nazwa%20funkcjonalno%C5%9Bci%0AOpis%3A%20Szczeg%C3%B3%C5%82owy%20opis%20funkcjonalno%C5%9Bci%20(postaraj%20si%C4%99%2C%20nie%20lubi%C4%99%20czyta%C4%87%20sebixowych%20wypocin)%0ALinki%20do%20zdj%C4%99%C4%87%3A%20(Poka%C5%BC%20na%20co%20ci%C4%99%20sta%C4%87%20i%20narysuj%20jak%20nie%20jeste%C5%9B%20w%20stanie%20opowiada%C4%87)">Pomysły</a> & <a href="https://github.com/Klaku/Plemiona/issues">Zgłaszanie Błędów</a></span>
+</div>

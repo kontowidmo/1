@@ -41,6 +41,7 @@
                     <select id="sb" style="width:100%; text-align: center;" onchange="updateValue('sb')">
                         <option value="a">A</option>
                         <option value="b">B</option>
+                        <option value="c">C</option>
                     </select>
                 </td>  
             </tr>
